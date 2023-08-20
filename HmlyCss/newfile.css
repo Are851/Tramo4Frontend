@@ -1,0 +1,32 @@
+body {
+    color: red;
+    font-family: helvetica;
+    background: black;
+    text-align: center;
+    font-size: 20px;
+    margin:50px;
+}
+*{
+    background-color: blanchedalmond;
+    font-family:  'Times New Roman';
+}
+h1{
+    font-size: 50px;
+    color: blue;
+}
+/* link sin visitar */
+a:link {
+    color: red;
+    }
+    /* link visitado*/
+    a:visited {
+    color: green;
+    }
+    /* mouse sobre el link*/
+    a:hover {
+    color: pink;
+    }
+    /* link clickeado */
+    a:active {
+    color: blue;
+    }

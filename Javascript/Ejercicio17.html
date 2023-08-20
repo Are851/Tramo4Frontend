@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>División de Números</title>
+</head>
+<body>
+    <h1>Ejercicio 17</h1>
+<h2> Realizar un programa que elimine los 
+    dos últimos elementos de un array. Mostrar el
+    resultado</h2>
+    <p>Ingrese números separados por comas:</p>
+    <input type="text" id="numerosInput">
+    <button id="calcularButton">Calcular</button>
+    <p>Resultado:</p>
+    <div id="resultado"></div>
+
+    <script>
+        document.getElementById('calcularButton').addEventListener('click', function() {
+            let numerosInput = document.getElementById('numerosInput').value;
+            let numeros = numerosInput.split(',').map(Number);
+            numeros.splice(3);
+            document.getElementById('resultado').textContent = numeros.toString();
+        });
+    </script>
+</body>
+</html>
